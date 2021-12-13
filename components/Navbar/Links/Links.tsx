@@ -5,11 +5,12 @@ const Links: FunctionComponent<{
   activeItem: string;
   setActiveItem: Function;
   name: string;
-}> = ({ name, activeItem, setActiveItem }) => {
+  route: string;
+}> = ({ name, activeItem, setActiveItem, route }) => {
   return (
     <>
       {activeItem !== name && (
-        <Link href={`/${name.toLocaleLowerCase()}`}>
+        <Link href={`/${route.toLocaleLowerCase()}`}>
           <a>
             <span
               className="hover:text-vstext2"

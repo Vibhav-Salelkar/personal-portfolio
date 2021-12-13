@@ -10,7 +10,7 @@ export default function Navbar() {
   const { pathname } = useRouter();
 
   useEffect(() => {
-    if (pathname === "/" || pathname === "/about") setActiveItem("About");
+    if (pathname === "/") setActiveItem("About");
     if (pathname === "/projects") setActiveItem("Projects");
     if (pathname === "/resume") setActiveItem("Resume");
   }, []);
@@ -25,16 +25,19 @@ export default function Navbar() {
           activeItem={activeItem}
           setActiveItem={setActiveItem}
           name="About"
+          route=""
         />
         <Links
           activeItem={activeItem}
           setActiveItem={setActiveItem}
           name="Projects"
+          route="projects"
         />
         <Links
           activeItem={activeItem}
           setActiveItem={setActiveItem}
           name="Resume"
+          route="resume"
         />
       </div>
     </div>
