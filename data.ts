@@ -6,12 +6,12 @@ import {MdDeveloperMode} from 'react-icons/md';
 export const skills:ISkill[] = [
     {
         title: 'Frontend Development',
-        about: 'Experience with Javascript/Typescript, React, Redux, Jquery, Bootstrap, Tailwind, Material UI, NextJs, HTML, CSS,LESS, Sass',
+        about: 'Experience with Javascript/Typescript, React, Redux, Jquery, Bootstrap, Tailwind, Material UI, NextJs, HTML, CSS, LESS, Sass',
         Icon: RiComputerLine,
     },
     {
         title: 'Backend Development',
-        about: 'Experience with backend technologies like NodeJS, Express, PHP, MongoDB, and SQL.',
+        about: 'Experience with backend technologies like NodeJS, Express, PHP, MongoDB and SQL.',
         Icon: FaServer,
     },
     {
