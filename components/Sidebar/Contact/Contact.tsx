@@ -13,7 +13,7 @@ export default function Contact() {
         </a>
       </div>
       <div
-        className="py-4 my-5 text-sm bg-vspanel"
+        className="py-4 my-5 text-sm bg-vspanel dark:bg-dark-200"
         style={{ marginLeft: "-1rem", marginRight: "-1rem" }}
       >
         <div className="flex items-center justify-center space-x-2">
