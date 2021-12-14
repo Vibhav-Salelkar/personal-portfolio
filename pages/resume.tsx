@@ -1,5 +1,5 @@
 import ExperienceCard from "../components/ExperienceCard/EdExperienceCard";
-import WorkExperienceCard from "../components/ExperienceCard/workExperienceCard";
+import WorkExperienceCard from "../components/ExperienceCard/WorkExperienceCard";
 import { educationExperience, workExperience } from "../data";
 
 export default function resume() {
