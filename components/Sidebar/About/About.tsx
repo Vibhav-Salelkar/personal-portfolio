@@ -9,14 +9,14 @@ export default function About() {
       <p className="px-2 py-2 my-3 text-sm rounded-full bg-vspanel dark:bg-dark-200">
         Software Developer
       </p>
-      <a
+      {/* <a
         className="flex items-center justify-center px-2 py-2 my-3 text-sm rounded-full bg-vspanel dark:bg-dark-200"
         href=""
         download=""
       >
         <FiDownload className="w-4 h-4 mr-1" />
         Download Resume
-      </a>
+      </a> */}
     </>
   );
 }

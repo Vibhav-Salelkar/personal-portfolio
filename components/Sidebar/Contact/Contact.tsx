@@ -5,10 +5,10 @@ export default function Contact() {
   return (
     <>
       <div className="flex justify-around w-2/12 mx-auto my-5 md:justify-center md:w-full">
-        <a href="">
+        <a href="https://www.linkedin.com/in/vibhavsalelkar" target="_blank">
           <AiFillLinkedin className="w-8 h-8 mx-2 text-blue-500 cursor-pointer" />
         </a>
-        <a href="">
+        <a href="https://github.com/Vibhav-Salelkar" target="_blank">
           <AiFillGithub className="w-8 h-8 mx-2 cursor-pointer text-black-500" />
         </a>
       </div>
@@ -18,10 +18,10 @@ export default function Contact() {
       >
         <div className="flex items-center justify-center space-x-2">
           <GoLocation className="w-4 h-4" />
-          <span>Goa, India</span>
+          <span className="mt-1">Goa, India</span>
         </div>
         <p className="my-2 sm:ml-3">salelkarvibhav@gmail.com</p>
-        <p className="my-2 sm:ml-3">9763048939/7972457850</p>
+        <p className="my-2 sm:ml-3">7972457850</p>
       </div>
     </>
   );

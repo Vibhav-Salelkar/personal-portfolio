@@ -25,13 +25,11 @@ export default function Projects() {
     setActive(category);
   };
 
-  let wrapperClass = "px-5 py-2 overflow-y-scroll";
-
   return (
     <div className="px-5 pb-2 overflow-y-scroll" style={{ height: "70vh" }}>
       <div
         className="absolute z-10 w-full h-full pointer-events-none"
-        style={{ backgroundColor: theme==='dark' ? showDetail && "rgb(0 0 0 / 90%)" : showDetail && "rgb(255 255 255 / 90%)"  }}
+        style={{ backgroundColor: theme!=='light' ? showDetail && "rgb(0 0 0 / 90%)" : showDetail && "rgb(255 255 255 / 90%)"  }}
       ></div>
       <ProjectNavbar handleCategories={handleCategories} active={active} />
       <div className="grid grid-cols-12 gap-4 my-3 ">
