@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
         <div className="col-span-12 p-4 text-center bg-white shadow-vs-light dark:shadow-vs-dark dark:bg-dark-500 lg:col-span-3 rounded-2xl">
           <Sidebar/>
         </div>
-        <div className="flex flex-col col-span-12 overflow-hidden bg-white lg:col-span-9 rounded-2xl dark:bg-dark-500">
+        <div className="relative flex flex-col col-span-12 overflow-hidden bg-white lg:col-span-9 rounded-2xl dark:bg-dark-500">
           <Navbar/>
           <Component {...pageProps} />
         </div>

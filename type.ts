@@ -19,3 +19,16 @@ export interface IWorkExperience {
     url: string,
     about: string
 }
+
+export interface IProject {
+    id: number,
+    name: string,
+    desc: string,
+    img: string,
+    source: string,
+    github: string,
+    category: string[],
+    tech: string[],
+}
+
+export type Category = "react"|"next"|"node"|"javascript/typescript"|"mongo";

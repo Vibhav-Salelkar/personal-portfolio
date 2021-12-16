@@ -4,7 +4,7 @@ export default function About() {
   return (
     <>
       <h3 className="my-5 text-2xl font-medium tracking-wider target font-Courgette">
-        <span className="text-vstext2">Vibhav</span> Salelkar
+        <span className="text-vstext2">Vibhav</span> Sinai Salelkar
       </h3>
       <p className="px-2 py-2 my-3 text-sm rounded-full bg-vspanel dark:bg-dark-200">
         Software Developer

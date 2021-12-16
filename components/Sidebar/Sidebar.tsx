@@ -3,7 +3,7 @@ import Avatar from "./Avatar/Avatar";
 import Contact from "./Contact/Contact";
 import About from "./About/About";
 import {useTheme} from "next-themes";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Sidebar = () => {
 
@@ -16,8 +16,11 @@ const Sidebar = () => {
 
   const handleToggle = () => {
     setTheme(theme==='light'?'dark':'light');
-    setMode(mode==='Light'? 'Dark' : 'Light');
   }
+
+  useEffect(() => {    
+    setMode(theme==='light'? 'Dark' : 'Light');
+  }, [theme])
 
   return (
     <div>
