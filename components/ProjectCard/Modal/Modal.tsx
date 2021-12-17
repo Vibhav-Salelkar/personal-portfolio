@@ -14,11 +14,11 @@ const Modal: FunctionComponent<{
 }> = ({ name, desc, img, source, github, tech, setShowDetail }) => {
   return (
     <div
-      className="absolute z-10 grid h-auto grid-cols-2 p-10 text-black bg-gray-100 md:left-7 sm:left-4 top-40 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100"
+      className="absolute top-0 z-10 grid grid-cols-1 p-10 text-black bg-gray-100 border-2 border-gray-700 md:grid-cols-2 md:left-7 sm:left-4 md:top-40 gap-x-12 dark:text-white dark:bg-dark-100 left-2" 
       style={{ width: "92%" }}
     >
       <div>
-        <div className="border-4 border-gray-800 dark:border-gray-200">
+        <div className="border-4 border-gray-800 rounded-lg dark:border-gray-700">
           <Image
             src={`/media/${img}`}
             alt=""
@@ -27,12 +27,12 @@ const Modal: FunctionComponent<{
             layout="responsive"
           />
         </div>
-        <div className="flex justify-center my-4 space-x-3">
+        <div className="flex flex-wrap justify-center gap-2 my-4 md:flex-row">
           <a
             href={github}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
+            className="flex items-center px-2 py-1 space-x-2 text-xs bg-gray-200 border-2 rounded-lg md:px-4 md:py-2 md:text-lg sm:py-1 sm:text-sm sm:px-2 whitespace-nowrap dark:border-gray-700 dark:bg-dark-200"
           >
             <AiFillGithub /> <span>Source Code</span>
           </a>
@@ -40,20 +40,20 @@ const Modal: FunctionComponent<{
             href={source}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
+            className="flex items-center px-2 py-1 space-x-2 text-xs bg-gray-200 border-2 rounded-lg md:px-4 md:py-2 md:text-lg sm:py-1 sm:text-sm sm:px-2 whitespace-nowrap dark:border-gray-700 dark:bg-dark-200"
           >
             <AiFillProject /> <span>Live Demo</span>
           </a>
         </div>
       </div>
       <div>
-        <h2 className="mb-3 text-xl font-medium md:text-2xl">{name}</h2>
-        <h5 className="mb-3 font-medium">{desc}</h5>
-        <div className="flex flex-wrap mt-5 space-x-2 text-sm tracking-wider">
+        <h2 className="mb-3 text-base font-medium md:text-2xl">{name}</h2>
+        <h5 className="mb-3 text-xs font-medium tracking-wider md:tracking-wide md:text-base">{desc}</h5>
+        <div className="flex flex-wrap gap-1 mt-5 text-sm tracking-wider md:gap-2">
           {tech.map((tech, index) => {
             return (
               <span
-                className="px-1 bg-gray-200 py1 my1 dark:bg-dark-200 rounded-small"
+                className="px-2 py-1 my-1 text-xs bg-gray-200 border-2 rounded-lg md:px-3 md:py-2 dark:bg-dark-200 rounded-small md:text-base dark:border-gray-700"
                 key={index}
               >
                 {tech}
@@ -66,9 +66,9 @@ const Modal: FunctionComponent<{
         onClick={() => {
           setShowDetail(null);
         }}
-        className="absolute p-1 bg-gray-200 rounded-full top-3 right-3 focus:outline-none dark:bg-dark-200"
+        className="absolute bg-gray-200 rounded-full md:p-2 sm:p-1 top-3 right-3 focus:outline-none dark:bg-dark-200"
       >
-        <MdClose size={30} />
+        <MdClose size={20} />
       </button>
     </div>
   );
