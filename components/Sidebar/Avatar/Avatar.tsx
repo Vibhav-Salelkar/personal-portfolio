@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Avatar() {
   return (
-    <a href="/">
+    <Link href="/">
       <Image
         src="/media/profile.jfif"
         alt="my profile picture"
@@ -12,6 +13,6 @@ export default function Avatar() {
         layout="intrinsic"
         quality="100"
       />
-    </a>
+    </Link>
   );
 }

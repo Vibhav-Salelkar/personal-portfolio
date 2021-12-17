@@ -31,6 +31,7 @@ const Modal: FunctionComponent<{
           <a
             href={github}
             target="_blank"
+            rel="noreferrer"
             className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
           >
             <AiFillGithub /> <span>Source Code</span>
@@ -38,6 +39,7 @@ const Modal: FunctionComponent<{
           <a
             href={source}
             target="_blank"
+            rel="noreferrer"
             className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
           >
             <AiFillProject /> <span>Live Demo</span>

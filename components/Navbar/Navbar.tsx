@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import { useRouter } from "next/router";
 
 import Links from "./Links/Links";
@@ -13,7 +12,7 @@ export default function Navbar() {
     if (pathname === "/") setActiveItem("About");
     if (pathname === "/projects") setActiveItem("Projects");
     if (pathname === "/resume") setActiveItem("Resume");
-  }, []);
+  }, [pathname]);
 
   return (
     <div className="flex justify-between px-5 py-3 my-3">

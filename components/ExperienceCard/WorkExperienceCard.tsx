@@ -12,6 +12,7 @@ const WorkExperienceCard: FunctionComponent<{
           className="font-semibold text-blue-400 text-md "
           href={url}
           target="_blank"
+          rel="noreferrer"
         >
           {subtitle}
         </a>

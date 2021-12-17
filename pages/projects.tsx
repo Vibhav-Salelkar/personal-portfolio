@@ -35,7 +35,7 @@ export default function Projects() {
       <div className="grid grid-cols-12 gap-4 my-3 ">
         {projects.map((project) => {
           return (
-            <div className="col-span-12 p-2 bg-gray-200 sm:col-span-6 lg:col-span-4 dark:bg-dark-200">
+            <div key={project.id} className="col-span-12 p-2 bg-gray-200 sm:col-span-6 lg:col-span-4 dark:bg-dark-200">
               <ProjectCard
                 project={project}
                 key={project.name}
