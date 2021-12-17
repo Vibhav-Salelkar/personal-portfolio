@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Avatar() {
   return (
-    <Link href="/">
+    <Link href="/" passHref={true}>
       <Image
-        src="/media/profile.jfif"
+        src="/media/profile.png"
         alt="my profile picture"
         className="mx-auto rounded-full"
         width="128"
