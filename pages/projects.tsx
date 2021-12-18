@@ -1,4 +1,5 @@
 import { useTheme } from "next-themes";
+import Head from "next/head";
 import { useState } from "react";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import ProjectNavbar from "../components/ProjectNavbar/ProjectNavbar";
@@ -27,6 +28,10 @@ export default function Projects() {
 
   return (
     <div className="px-5 pb-2 overflow-y-scroll" style={{ height: "70vh" }}>
+      <Head>
+        <title>Projects</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div
         className="absolute z-10 w-full h-full pointer-events-none"
         style={{ backgroundColor: theme!=='light' ? showDetail && "rgb(0 0 0 / 90%)" : showDetail && "rgb(255 255 255 / 90%)"  }}

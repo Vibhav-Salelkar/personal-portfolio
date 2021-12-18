@@ -1,4 +1,5 @@
 import { GetStaticPropsContext } from "next";
+import Head from "next/head";
 import SkillCard from "../components/SkillCard/SkillCard";
 import { skills } from "../data";
 
@@ -14,6 +15,10 @@ const index = () => {
   
   return (
     <div className="flex flex-col flex-grow px-6 pt-1">
+      <Head>
+        <title>Home</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <h5 className="my-2 font-medium ">
         {aboutMe}
       </h5>
