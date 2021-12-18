@@ -27,7 +27,7 @@ module.exports = {
           DEFAULT: '#0b0c10',
         },
         vspanel: {
-          DEFAULT: '#c5c6c7',
+          DEFAULT: 'rgba(236,247,249,1)',
         },
         dark: {
           DEFAULT: "#010101",

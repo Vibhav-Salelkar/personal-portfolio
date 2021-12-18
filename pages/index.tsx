@@ -18,7 +18,7 @@ const index = () => {
         {aboutMe}
       </h5>
       <div
-        className="flex-grow p-4 mt-6 bg-vspanel dark:bg-dark-100"
+        className="flex-grow p-4 mt-6 bg-gray-100 dark:bg-dark-100"
         style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
       >
         <h6 className="mt-4 mb-6 text-xl font-bold tracking-wide">
@@ -29,7 +29,7 @@ const index = () => {
             return (
               <div
                 key={index}
-                className="bg-gray-200 rounded-lg dark:bg-dark-200 lg:col-span-1"
+                className="rounded-lg bg-vspanel dark:bg-dark-200 lg:col-span-1"
               >
                 <SkillCard skill={skill} />
               </div>

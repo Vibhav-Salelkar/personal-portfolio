@@ -14,7 +14,7 @@ const Modal: FunctionComponent<{
 }> = ({ name, desc, img, source, github, tech, setShowDetail }) => {
   return (
     <div
-      className="absolute top-0 z-10 grid grid-cols-1 p-10 text-black bg-gray-100 border-2 border-gray-700 md:grid-cols-2 md:left-7 sm:left-4 md:top-40 gap-x-12 dark:text-white dark:bg-dark-100 left-2" 
+      className="absolute top-0 z-10 grid grid-cols-1 p-10 text-black border-2 border-blue-100 dark:border-gray-700 bg-vspanel md:grid-cols-2 md:left-7 sm:left-4 md:top-28 gap-x-12 dark:text-white dark:bg-dark-100 left-2" 
       style={{ width: "92%" }}
     >
       <div>
@@ -32,7 +32,7 @@ const Modal: FunctionComponent<{
             href={github}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center px-2 py-1 space-x-2 text-xs bg-gray-200 border-2 rounded-lg md:px-4 md:py-2 md:text-lg sm:py-1 sm:text-sm sm:px-2 whitespace-nowrap dark:border-gray-700 dark:bg-dark-200"
+            className="flex items-center px-2 py-1 space-x-2 text-xs bg-gray-200 border-2 border-gray-400 rounded-lg md:px-4 md:py-2 md:text-lg sm:py-1 sm:text-sm sm:px-2 whitespace-nowrap dark:border-gray-700 dark:bg-dark-200"
           >
             <AiFillGithub /> <span>Source Code</span>
           </a>
@@ -40,7 +40,7 @@ const Modal: FunctionComponent<{
             href={source}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center px-2 py-1 space-x-2 text-xs bg-gray-200 border-2 rounded-lg md:px-4 md:py-2 md:text-lg sm:py-1 sm:text-sm sm:px-2 whitespace-nowrap dark:border-gray-700 dark:bg-dark-200"
+            className="flex items-center px-2 py-1 space-x-2 text-xs bg-gray-200 border-2 border-gray-400 rounded-lg md:px-4 md:py-2 md:text-lg sm:py-1 sm:text-sm sm:px-2 whitespace-nowrap dark:border-gray-700 dark:bg-dark-200"
           >
             <AiFillProject /> <span>Live Demo</span>
           </a>
@@ -53,7 +53,7 @@ const Modal: FunctionComponent<{
           {tech.map((tech, index) => {
             return (
               <span
-                className="px-2 py-1 my-1 text-xs bg-gray-200 border-2 rounded-lg md:px-3 md:py-2 dark:bg-dark-200 rounded-small md:text-base dark:border-gray-700"
+                className="px-2 py-1 my-1 text-xs bg-gray-200 border-2 border-gray-400 rounded-lg md:px-3 md:py-2 dark:bg-dark-200 rounded-small md:text-base dark:border-gray-700"
                 key={index}
               >
                 {tech}
