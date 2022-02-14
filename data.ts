@@ -88,6 +88,16 @@ export const projects: IProject[] = [
     tech: ['MongoDB','Express','React','NodeJs'],
   },
   {
+    id: 13,
+    name: "VChat Chat Application",
+    desc: "VChat is simple chat application developed to understand use cases of socket.io and MERN stack with features like groups, personal chats etc.",
+    img: "vchat.png",
+    source: "https://vchats.netlify.app/",
+    github: "https://github.com/Vibhav-Salelkar/vchat-frontend",
+    category: ["javascript/typescript"],
+    tech: ['MongoDB','Express','React','NodeJs', 'Socket.IO'],
+  },
+  {
     id: 3,
     name: "Simple REST API",
     desc: "Simple CRUD operation on data to understand use case using REST API. Developed using Express, Node, React.",
